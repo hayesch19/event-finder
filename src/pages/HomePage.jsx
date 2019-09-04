@@ -7,12 +7,8 @@ const HomePage = () => {
   return (
     <main>
       <Header />
-      <div className="section-left">
-        <EventSearch />
-      </div>
-      <div className="section-right">
-        <Highlights />
-      </div>
+      <EventSearch />
+      <Highlights />
     </main>
   )
 }

@@ -15,29 +15,31 @@ const EventSearch = () => {
     console.log(resp.data, 'Results')
   }
   return (
-    <section className="event-search-area">
-      <div>
-        <input
-          type="search"
-          placeholder="Search Here"
-          className="search-box"
-          value={searchTerm}
-          onChange={e => setSearchTerm(e.target.value)}
-        />
-        <button className="search-btn" onClick={fetchSearchData}>
-          <i className="fas fa-search fa-flip-horizontal "></i>SEARCH
-        </button>
-      </div>
-      <div className="search-results">
-        {searchResults._embedded.events.map((event, i) => {
-          return (
-            <p key={i}>
-              {event.dates.start.localDate} | {event.name}
-            </p>
-          )
-        })}
-      </div>
-    </section>
+    <div className="row">
+      <section className="event-search-area">
+        <div>
+          <input
+            type="search"
+            placeholder="Search Here"
+            className="search-box"
+            value={searchTerm}
+            onChange={e => setSearchTerm(e.target.value)}
+          />
+          <button className="search-btn" onClick={fetchSearchData}>
+            <i className="fas fa-search fa-flip-horizontal "></i>SEARCH
+          </button>
+        </div>
+        <div className="search-results">
+          {searchResults._embedded.events.map((event, i) => {
+            return (
+              <p key={i}>
+                {event.dates.start.localDate} | {event.name}
+              </p>
+            )
+          })}
+        </div>
+      </section>
+    </div>
   )
 }
 

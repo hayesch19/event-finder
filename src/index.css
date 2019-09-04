@@ -4,6 +4,7 @@
 
 html {
   height: 100%;
+  background-color: #d2fafb;
 }
 
 body {
@@ -13,12 +14,16 @@ body {
 
 header {
   text-align: center;
+  background-color: #6bc5d2;
+  padding: 0.3rem;
+  color: #b5525c;
 }
 
 /***** Classes *****/
 
 .highlighted-events-area {
   padding: 1rem;
+  color: #b5525c;
 }
 
 .event-search-area {
@@ -27,4 +32,5 @@ header {
   text-align: center;
   align-items: center;
   flex-direction: column;
+  color: #b5525c;
 }

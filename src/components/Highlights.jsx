@@ -16,22 +16,24 @@ const Highlights = () => {
   }, [])
 
   return (
-    <section className="highlighted-events-area">
-      <aside>
-        <h3>
-          <u>Upcoming Events</u>
-        </h3>
-        <div>
-          {highlight._embedded.events.map((event, i) => {
-            return (
-              <p key={i}>
-                {event.dates.start.localDate} | {event.name}
-              </p>
-            )
-          })}
-        </div>
-      </aside>
-    </section>
+    <div className="row">
+      <section className="highlighted-events-area">
+        <aside>
+          <h3>
+            <u>Upcoming Events</u>
+          </h3>
+          <div>
+            {highlight._embedded.events.map((event, i) => {
+              return (
+                <p key={i}>
+                  {event.dates.start.localDate} | {event.name}
+                </p>
+              )
+            })}
+          </div>
+        </aside>
+      </section>
+    </div>
   )
 }
 

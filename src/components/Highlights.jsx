@@ -5,7 +5,7 @@ const Highlights = () => {
   const [highlight, setHighlight] = useState({ _embedded: { events: [] } })
   const fetchData = async () => {
     const resp = await Axios.get(
-      'https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=S1s9ya73k9LYDPewGFfpwnza4is3CrEY&size=10'
+      'https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=S1s9ya73k9LYDPewGFfpwnza4is3CrEY&size=5'
     )
     setHighlight(resp.data)
     console.log(resp.data, 'Events')
@@ -20,7 +20,7 @@ const Highlights = () => {
       <section className="highlighted-events-area">
         <aside>
           <h3>
-            <u>Upcoming Events</u>
+            <u>Featured Upcoming Events</u>
           </h3>
           <div>
             {highlight._embedded.events.map((event, i) => {

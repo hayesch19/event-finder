@@ -20,13 +20,13 @@ const EventSearch = () => {
         <div>
           <input
             type="search"
-            placeholder="Search Here"
+            placeholder="Enter Events Here"
             className="search-box"
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
           />
           <button className="search-btn" onClick={fetchSearchData}>
-            <i className="fas fa-search fa-flip-horizontal "></i>SEARCH
+            <i className="fas fa-search fa-flip-horizontal "></i>Search Events
           </button>
         </div>
         <div className="search-results">

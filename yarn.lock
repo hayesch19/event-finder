@@ -6284,6 +6284,11 @@ markdown-table@^1.1.0:
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.3.tgz#9fcb69bcfdb8717bfd0398c6ec2d93036ef8de60"
   integrity sha512-1RUZVgQlpJSPWYbFSpmudq5nHY1doEIv89gBtF0s4gW1GF2XorxcA/70M5vq7rLv0a6mhOUccRsqkwhwLCIQ2Q==
 
+materialize-css@^1.0.0-rc.2:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/materialize-css/-/materialize-css-1.0.0.tgz#8d5db1c4a81c6d65f3b2e2ca83a8e08daa24d1be"
+  integrity sha512-4/oecXl8y/1i8RDZvyvwAICyqwNoKU4or5uf8uoAd74k76KzZ0Llym4zhJ5lLNUskcqjO0AuMcvNyDkpz8Z6zw==
+
 mathml-tag-names@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/mathml-tag-names/-/mathml-tag-names-2.1.1.tgz#6dff66c99d55ecf739ca53c492e626f1d12a33cc"
@@ -6353,9 +6358,9 @@ meow@^5.0.0:
     yargs-parser "^10.0.0"
 
 merge-deep@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/merge-deep/-/merge-deep-3.0.2.tgz#f39fa100a4f1bd34ff29f7d2bf4508fbb8d83ad2"
-  integrity sha512-T7qC8kg4Zoti1cFd8Cr0M+qaZfOwjlPDEdZIIPPB2JZctjaPM4fX+i7HOId69tAti2fvO6X5ldfYUONDODsrkA==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/merge-deep/-/merge-deep-3.0.3.tgz#1a2b2ae926da8b2ae93a0ac15d90cd1922766003"
+  integrity sha512-qtmzAS6t6grwEkNrunqTBdn0qKwFgNWvlxUbAV8es9M7Ot1EbyApytCnvE0jALPa46ZpKDUo527kKiaWplmlFA==
   dependencies:
     arr-union "^3.1.0"
     clone-deep "^0.2.4"
